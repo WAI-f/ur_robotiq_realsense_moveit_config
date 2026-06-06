@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ur5_robotiq85_rsd455_description
+    relative_path: urdf/ur5_robotiq85_rsd455.urdf.xacro
+  srdf:
+    relative_path: config/ur5_robotiq85_d455.srdf
+  package_settings:
+    author_name: fwg
+    author_email: 2427697582@qq.com
+    generated_timestamp: 1780782830
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
